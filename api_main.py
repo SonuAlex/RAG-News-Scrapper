@@ -1,5 +1,6 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
+from pydantic import BaseModel
 from datetime import datetime
 from pymongo import MongoClient
 import logging
@@ -37,8 +38,8 @@ def API_Status():
     except Exception as e:
         logging.error(f"Health check failed: {e}")
         return JSONResponse(status_code=500, content={"message": "Internal Server Error"})
-
-@app.get("/search&user_id={user_id}&text={text}&top_k={top_k}&threshold={threshold}")
+    
+@app.get("/search")
 def search(user_id: str, text: str, top_k: int, threshold: float):
     try:
         user_data = search_collection.find_one({"user_id": user_id})
@@ -71,6 +72,51 @@ def search(user_id: str, text: str, top_k: int, threshold: float):
             })
 
         return {"user_id": user_id, "text": text, "top_k": top_k, "threshold": threshold}
+    except Exception as e:
+        logging.error(f"Error processing search request: {e}")
+        return JSONResponse(status_code=500, content={"message": "Internal Server Error"})
+
+# Defining the search request model
+class SearchRequest(BaseModel):
+    user_id: str
+    text: str
+    top_k: int
+    threshold: float
+
+    
+@app.post("/search")
+def search_post(request: SearchRequest):
+    try:
+        user_data = search_collection.find_one({"user_id": request.user_id})
+        if user_data and user_data["search_count"] >= 5:
+            log_message = f"Search limit exceeded - user_id: {request.user_id}"
+            logging.warning(log_message)
+            return {"message": "Search limit exceeded."}
+
+        log_message = f"Search request - user_id: {request.user_id}, text: {request.text}, top_k: {request.top_k}, threshold: {request.threshold}"
+        logging.info(log_message)
+
+        # Update search data
+        search_entry = {
+            "text": request.text,
+            "top_k": request.top_k,
+            "threshold": request.threshold,
+            "timestamp": datetime.now().isoformat()
+        }
+
+        if user_data:
+            search_collection.update_one(
+                {"user_id": request.user_id},
+                {"$inc": {"search_count": 1}, "$push": {"searches": search_entry}}
+            )
+        else:
+            search_collection.insert_one({
+                "user_id": request.user_id,
+                "search_count": 1,
+                "searches": [search_entry]
+            })
+
+        return {"user_id": request.user_id, "text": request.text, "top_k": request.top_k, "threshold": request.threshold}
     except Exception as e:
         logging.error(f"Error processing search request: {e}")
         return JSONResponse(status_code=500, content={"message": "Internal Server Error"})
