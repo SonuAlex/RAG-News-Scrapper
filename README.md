@@ -23,6 +23,10 @@ all-MiniLM-L6-v2` using its Inference API.
     - For the database, all the data is available in the MongoDB cloud database.
     - I have also used MongoDB's `Atlas Search` to **Fine-tune** the search results.
 
+- ### Logging:
+    - I have created a logging functionality to log all the requests and their inference time, including any errors that may have happened through the API
+    - The logs are stored in the `api.log` file
+
 ## Installation
 The libraries that are to be installed to run this are:
 - `fastapi`
