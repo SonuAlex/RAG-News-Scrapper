@@ -1,5 +1,5 @@
 # AI Intern Task for Trademarkia
-The task is to build a backend for efficient document retrieval. This project is coded in `Python`. In the backend, I have included all the required endpoints.
+The task is to build a backend for efficient document retrieval. This project is coded in `Python`. In the backend, I have included all the required endpoints. The project is fully complete with a working database and embedding model.
 
 ## Features
 - ### API:
@@ -9,9 +9,19 @@ The task is to build a backend for efficient document retrieval. This project is
     - Handled all possible known errors with a `try...except` block and logs the errors when they have occurred.
 
 - ### Embedding:
-    - 
+    - I have used a embedding model from **Hugging Face** called the `
+all-MiniLM-L6-v2` using its Inference API.
+    - The embedding model creates vector embeddings of dimension `384`
+    - For quering the **promt** given, I have used `DotProduct` to find the similarity and `KNNVector` to find the results.
+    - For this, I have taken the assistance of `MongoDB Atlas`
+
 - ### Web Scraping:
-    - 
+    - I have taken the newsletters from `The Hindustan Times`
+    - I have scraped data such as `Link`, `Headlines`, `Date`, and `Source`
+
+- ### Database:
+    - For the database, all the data is available in the MongoDB cloud database.
+    - I have also used MongoDB's `Atlas Search` to **Fine-tune** the search results.
 
 ## Installation
 The libraries that are to be installed to run this are:
@@ -19,12 +29,13 @@ The libraries that are to be installed to run this are:
 - `pymongo`
 - `uvicorn`
 - `pydantic`
+- `beautifulsoup4`
+- `requests`
 
 ## Usage
-- Explain how to use your project and provide examples
+- The `api_main.py` has the api backend and it run using the `FastAPI` framework.
+- The `hindustan_new_scrapper.py` does the scrapping and stores in the **MongoDB cloud**
+- The `embedding.py` does the embedding process and the vectors are stored in the MongoDB cloud database in the same JSON file as the newsletter
 
-## Contributing
-- Guidelines for contributing to your project
-
-## License
-- Specify the license under which your project is distributed
+## Note
+All the API keys in this project is free-tiered and have a limit of queries that can be set to them. Please use them cautiously
