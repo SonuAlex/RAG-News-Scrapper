@@ -1,19 +1,25 @@
-from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
+from dotenv import load_dotenv
+from fastapi import FastAPI, Request
 from pydantic import BaseModel
 from datetime import datetime
-from pymongo import MongoClient
 import logging
+import embedding as em
+import pymongo
 import uvicorn
+import os
+
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(filename='api.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # MongoDB client setup
 try:
-    client = MongoClient("mongodb://localhost:27017/")
+    client = pymongo.MongoClient(os.environ.get("MONGODB_STRING_CONNECTION"))
     db = client["search_data"]
     search_collection = db["search_data"]
+    collection = db["HT_scraper_data"]
 except Exception as e:
     logging.error(f"Failed to connect to MongoDB: {e}")
     raise
@@ -71,7 +77,29 @@ def search(user_id: str, text: str, top_k: int, threshold: float):
                 "searches": [search_entry]
             })
 
-        return {"user_id": user_id, "text": text, "top_k": top_k, "threshold": threshold}
+        embedded_query = em.generate_embedding(text)
+        results = collection.aggregate([
+            {
+                "$vectorSearch": {
+                    "queryVector": embedded_query,
+                    "path": "embedding",
+                    "numCandidates": 100,
+                    "limit": top_k,
+                    "index": "PlotSemanticSearch",
+                }
+            }
+        ])
+        res = []
+        for result in results:
+            res.append(
+                {
+                    "link": result["link"],
+                    "title": result["title"],
+                    "date": result["date"],
+                    "source": result["source"]
+                }
+            )
+        return res
     except Exception as e:
         logging.error(f"Error processing search request: {e}")
         return JSONResponse(status_code=500, content={"message": "Internal Server Error"})
@@ -87,12 +115,14 @@ class SearchRequest(BaseModel):
 @app.post("/search")
 def search_post(request: SearchRequest):
     try:
+        # Checking user search limit
         user_data = search_collection.find_one({"user_id": request.user_id})
         if user_data and user_data["search_count"] >= 5:
             log_message = f"Search limit exceeded - user_id: {request.user_id}"
             logging.warning(log_message)
             return {"message": "Search limit exceeded."}
 
+        # Logging the search request
         log_message = f"Search request - user_id: {request.user_id}, text: {request.text}, top_k: {request.top_k}, threshold: {request.threshold}"
         logging.info(log_message)
 
@@ -104,6 +134,7 @@ def search_post(request: SearchRequest):
             "timestamp": datetime.now().isoformat()
         }
 
+        # Insert or update the search data
         if user_data:
             search_collection.update_one(
                 {"user_id": request.user_id},
@@ -116,7 +147,29 @@ def search_post(request: SearchRequest):
                 "searches": [search_entry]
             })
 
-        return {"user_id": request.user_id, "text": request.text, "top_k": request.top_k, "threshold": request.threshold}
+        embedded_query = em.generate_embedding(request.text)
+        results = collection.aggregate([
+            {
+                "$vectorSearch": {
+                    "queryVector": embedded_query,
+                    "path": "embedding",
+                    "numCandidates": 100,
+                    "limit": request.top_k,
+                    "index": "PlotSemanticSearch",
+                }
+            }
+        ])
+        res = []
+        for result in results:
+            res.append(
+                {
+                    "link": result["link"],
+                    "title": result["title"],
+                    "date": result["date"],
+                    "source": result["source"]
+                }
+            )
+        return res
     except Exception as e:
         logging.error(f"Error processing search request: {e}")
         return JSONResponse(status_code=500, content={"message": "Internal Server Error"})
