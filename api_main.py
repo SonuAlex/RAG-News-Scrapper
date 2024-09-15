@@ -1,3 +1,4 @@
+# Import necessary libraries
 from fastapi.responses import JSONResponse
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request
@@ -18,15 +19,17 @@ logging.basicConfig(filename='api.log', level=logging.INFO, format='%(asctime)s 
 try:
     client = pymongo.MongoClient(os.environ.get("MONGODB_STRING_CONNECTION"))
     db = client["search_data"]
-    search_collection = db["search_data"]
-    collection = db["HT_scraper_data"]
+    search_collection = db["search_data"]   # Collection to store search data
+    collection = db["HT_scraper_data"]    # Collection to store scraped data
+
+# Handling exceptions
 except Exception as e:
     logging.error(f"Failed to connect to MongoDB: {e}")
     raise
 
-app = FastAPI()
+app = FastAPI()   # Creating a FastAPI app
 
-@app.middleware("http")
+@app.middleware("http")     # Middleware to log requests
 async def log_requests(request: Request, call_next):
     try:
         response = await call_next(request)
@@ -37,7 +40,7 @@ async def log_requests(request: Request, call_next):
     logging.info(log_message)
     return response
 
-@app.get("/health", summary="Health Check", description="Returns the health status of the application.")
+@app.get("/health")    # Health check endpoint
 def API_Status():
     try:
         return {"status": "healthy", "timestamp": datetime.now().isoformat()}
@@ -45,7 +48,7 @@ def API_Status():
         logging.error(f"Health check failed: {e}")
         return JSONResponse(status_code=500, content={"message": "Internal Server Error"})
     
-@app.get("/search")
+@app.get("/search")   # Search endpoint
 def search(user_id: str, text: str, top_k: int, threshold: float):
     try:
         user_data = search_collection.find_one({"user_id": user_id})
@@ -89,6 +92,8 @@ def search(user_id: str, text: str, top_k: int, threshold: float):
                 }
             }
         ])
+
+        # Extracting the required fields from the search results
         res = []
         for result in results:
             res.append(
@@ -100,6 +105,8 @@ def search(user_id: str, text: str, top_k: int, threshold: float):
                 }
             )
         return res
+    
+    # Handling exceptions
     except Exception as e:
         logging.error(f"Error processing search request: {e}")
         return JSONResponse(status_code=500, content={"message": "Internal Server Error"})
@@ -112,7 +119,7 @@ class SearchRequest(BaseModel):
     threshold: float
 
     
-@app.post("/search")
+@app.post("/search")    # Search endpoint with POST method
 def search_post(request: SearchRequest):
     try:
         # Checking user search limit
@@ -159,6 +166,8 @@ def search_post(request: SearchRequest):
                 }
             }
         ])
+
+        # Extracting the required fields from the search results
         res = []
         for result in results:
             res.append(
@@ -170,9 +179,11 @@ def search_post(request: SearchRequest):
                 }
             )
         return res
+    
+    # Handling exceptions
     except Exception as e:
         logging.error(f"Error processing search request: {e}")
         return JSONResponse(status_code=500, content={"message": "Internal Server Error"})
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='0.0.0.0', port=8000)
+    uvicorn.run(app, host='0.0.0.0', port=8000) # Running the FastAPI app
