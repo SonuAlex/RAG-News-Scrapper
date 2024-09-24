@@ -104,6 +104,7 @@ def search(user_id: str, text: str, top_k: int, threshold: float):
                     "source": result["source"]
                 }
             )
+        # logging.info(f"Search results - user_id: {user_id}, count: {len(res)}, results: {res}")
         return res
     
     # Handling exceptions
