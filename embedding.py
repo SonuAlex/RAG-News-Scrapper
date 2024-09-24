@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
+import ollama
 import pymongo
-import requests
 import os
 
 load_dotenv()
@@ -14,13 +14,10 @@ hf_token = os.environ.get("HF_TOKEN")
 embedding_url = os.environ.get("HF_EMBEDDING_URL")
 
 def generate_embedding(text : str) -> list[float]:
-    response = requests.post(
-        embedding_url,
-        headers={'Authorization': f'Bearer {hf_token}'},
-        json = {'inputs': text}
+    response = ollama.embeddings(
+        model='all-minilm',
+        prompt=text,
     )
-
-    if response.status_code != 200:
-        raise ValueError(f"Request failed with status code {response.status_code} : {response.text}")
     
-    return response.json()
+    embedding = response["embedding"]
+    return embedding
