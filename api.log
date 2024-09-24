@@ -1,0 +1,193 @@
+2024-09-16 16:59:44,896 - INFO - GET http://localhost:8000/health - Status: 200
+2024-09-16 16:59:55,447 - INFO - Search request - user_id: 654, text: natural disaster, top_k: 5, threshold: 0.8
+2024-09-16 16:59:57,642 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:00:14,872 - INFO - Search request - user_id: 654, text: natural disaster, top_k: 10, threshold: 0.8
+2024-09-16 17:00:16,282 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:00:55,728 - INFO - Search request - user_id: 654, text: death, top_k: 10, threshold: 0.8
+2024-09-16 17:01:05,358 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:01:25,242 - INFO - Search request - user_id: 654, text: Kerala, top_k: 10, threshold: 0.8
+2024-09-16 17:01:26,603 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:01:53,523 - INFO - Search request - user_id: 654, text: Election, top_k: 10, threshold: 0.8
+2024-09-16 17:01:54,954 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:02:31,804 - WARNING - Search limit exceeded - user_id: 654
+2024-09-16 17:02:31,805 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:02:43,648 - INFO - Search request - user_id: 8848595306, text: Drinking Water, top_k: 10, threshold: 0.8
+2024-09-16 17:02:45,195 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:03:56,524 - INFO - Search request - user_id: 8848595306, text: Stock Market, top_k: 10, threshold: 0.8
+2024-09-16 17:03:59,889 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:04:35,728 - INFO - Search request - user_id: 8848595306, text: Stock Market, top_k: 15, threshold: 0.8
+2024-09-16 17:04:37,131 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:04:58,244 - INFO - Search request - user_id: 8848595306, text: IPhone 16, top_k: 15, threshold: 0.8
+2024-09-16 17:04:59,556 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:07:40,368 - INFO - Search request - user_id: 8848595306, text: Weather, top_k: 15, threshold: 0.8
+2024-09-16 17:07:41,812 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:10:46,121 - INFO - GET http://localhost:8000/health - Status: 200
+2024-09-16 17:10:47,063 - INFO - GET http://localhost:8000/health - Status: 200
+2024-09-16 17:11:10,528 - WARNING - Search limit exceeded - user_id: 8848595306
+2024-09-16 17:11:10,529 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:11:16,429 - INFO - Search request - user_id: 9207133858, text: Flights, top_k: 15, threshold: 0.8
+2024-09-16 17:11:17,785 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:11:29,565 - INFO - Search request - user_id: 9207133858, text: Citizens, top_k: 15, threshold: 0.8
+2024-09-16 17:11:31,012 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:11:47,249 - INFO - Search request - user_id: 9207133858, text: Police, top_k: 15, threshold: 0.8
+2024-09-16 17:11:49,090 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:12:49,883 - INFO - Search request - user_id: 9207133858, text: Family, top_k: 15, threshold: 0.8
+2024-09-16 17:12:52,276 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 17:13:04,044 - INFO - Search request - user_id: 9207133858, text: Shooting, top_k: 15, threshold: 0.8
+2024-09-16 17:13:05,412 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-16 19:22:53,518 - INFO - Search request - user_id: Jeff, text: food, top_k: 5, threshold: 0.8
+2024-09-16 19:22:55,519 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-20 11:04:16,064 - INFO - Search request - user_id: Celeb, text: Celebrities, top_k: 20, threshold: 0.75
+2024-09-20 11:04:18,335 - INFO - GET http://localhost:8000/search?user_id=Celeb&text=Celebrities&top_k=20&threshold=0.75 - Status: 200
+2024-09-20 11:05:08,770 - INFO - Search request - user_id: Celeb, text: Netizens, top_k: 5, threshold: 0.75
+2024-09-20 11:05:10,043 - INFO - GET http://localhost:8000/search?user_id=Celeb&text=Netizens&top_k=5&threshold=0.75 - Status: 200
+2024-09-20 11:05:31,698 - INFO - Search request - user_id: Celeb, text: Metro, top_k: 5, threshold: 0.75
+2024-09-20 11:05:34,050 - INFO - GET http://localhost:8000/search?user_id=Celeb&text=Metro&top_k=5&threshold=0.75 - Status: 200
+2024-09-20 11:05:49,251 - INFO - Search request - user_id: Celeb, text: Metro death, top_k: 5, threshold: 0.75
+2024-09-20 11:05:50,532 - INFO - GET http://localhost:8000/search?user_id=Celeb&text=Metro%20death&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 09:58:26,796 - INFO - Search request - user_id: Celeb, text: Celebrity, top_k: 5, threshold: 0.75
+2024-09-21 09:58:27,798 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 09:58:27,989 - INFO - GET http://localhost:8000/search?user_id=Celeb&text=Celebrity&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 09:58:41,511 - WARNING - Search limit exceeded - user_id: Celeb
+2024-09-21 09:58:41,511 - INFO - GET http://localhost:8000/search?user_id=Celeb&text=Football&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 09:58:47,946 - INFO - Search request - user_id: Chris, text: Football, top_k: 5, threshold: 0.75
+2024-09-21 09:58:48,131 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 09:58:48,384 - INFO - GET http://localhost:8000/search?user_id=Chris&text=Football&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 09:59:16,154 - INFO - Search request - user_id: Chris, text: Sports, top_k: 5, threshold: 0.75
+2024-09-21 09:59:16,323 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 09:59:16,491 - INFO - GET http://localhost:8000/search?user_id=Chris&text=Sports&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 09:59:29,090 - INFO - Search request - user_id: Chris, text: Food, top_k: 5, threshold: 0.75
+2024-09-21 09:59:29,963 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 09:59:33,283 - INFO - GET http://localhost:8000/search?user_id=Chris&text=Food&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 10:04:43,674 - INFO - Search request - user_id: Chris, text: Food, top_k: 5, threshold: 0.75
+2024-09-21 10:04:44,654 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 10:04:44,870 - INFO - GET http://localhost:8000/search?user_id=Chris&text=Food&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 10:04:55,112 - INFO - Search request - user_id: Chris, text: Cricket, top_k: 5, threshold: 0.75
+2024-09-21 10:04:55,322 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 10:04:55,534 - INFO - GET http://localhost:8000/search?user_id=Chris&text=Cricket&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 10:12:02,113 - WARNING - Search limit exceeded - user_id: Chris
+2024-09-21 10:12:02,114 - INFO - GET http://localhost:8000/search?user_id=Chris&text=Cricket&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 10:12:07,051 - INFO - Search request - user_id: Jeff, text: Cricket, top_k: 5, threshold: 0.75
+2024-09-21 10:12:07,982 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 10:12:08,221 - INFO - GET http://localhost:8000/search?user_id=Jeff&text=Cricket&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 10:12:18,746 - INFO - Search request - user_id: Jeff, text: Art, top_k: 5, threshold: 0.75
+2024-09-21 10:12:18,947 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 10:12:19,199 - INFO - GET http://localhost:8000/search?user_id=Jeff&text=Art&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 10:13:05,191 - INFO - Search request - user_id: Jeff, text: Art, top_k: 5, threshold: 0.75
+2024-09-21 10:13:05,416 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 10:13:05,631 - INFO - GET http://localhost:8000/search?user_id=Jeff&text=Art&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 10:13:16,042 - INFO - Search request - user_id: Jeff, text: Weather, top_k: 5, threshold: 0.75
+2024-09-21 10:13:16,236 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 10:13:16,438 - INFO - GET http://localhost:8000/search?user_id=Jeff&text=Weather&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 10:20:36,776 - INFO - Search request - user_id: Jeff, text: Weather, top_k: 5, threshold: 0.75
+2024-09-21 10:20:37,048 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 10:20:37,275 - INFO - Search results - user_id: Jeff, count: 5, results: [{'link': 'https://www.hindustantimes.com/world-news/philippines-vessel-from-contested-south-china-sea-shoal-returns-to-port-101726377566441.html', 'title': 'Philippines vessel from contested South China Sea shoal returns to port ', 'date': 'Updated on Sep 15, 2024 10:49 AM IST', 'source': 'world news'}, {'link': 'https://www.hindustantimes.com/lifestyle/art-culture/best-dining-table-and-chairs-top-10-options-to-enhance-your-space-and-create-a-stunning-dining-experience-101726231932498.html', 'title': 'Best dining table and chairs: Top 10 options for a stunning dining experience', 'date': 'Published on Sep 15, 2024 10:00 AM IST', 'source': 'lifestyle'}, {'link': 'https://www.hindustantimes.com/lifestyle/fashion/aishwarya-rai-dons-simple-all-black-fit-as-she-arrives-in-dubai-for-siima-awards-2024-with-daughter-aaradhya-101726368577076.html', 'title': 'Aishwarya opts for simple all-black fit as she arrives in Dubai for SIIMA Awards', 'date': 'Published on Sep 15, 2024 09:54 AM IST', 'source': 'lifestyle'}, {'link': 'https://www.hindustantimes.com/entertainment/music/john-legend-praises-taylor-swift-for-her-endorsement-of-kamala-harris-it-was-riskier-101726364509654.html', 'title': 'John Legend praises Taylor Swift for her endorsement of Kamala Harris', 'date': 'Published on Sep 15, 2024 09:51 AM IST', 'source': 'entertainment'}, {'link': 'https://www.hindustantimes.com/htcity/cinema/saiyami-kher-recalls-the-ordeal-of-losing-her-luggage-before-ironman-race-mentally-it-was-exhausting-101726350264494.html', 'title': 'Saiyami Kher recalls the ordeal of losing her luggage before Ironman Race', 'date': 'Published on Sep 15, 2024 09:48 AM IST', 'source': 'htcity'}]
+2024-09-21 10:20:37,275 - INFO - GET http://localhost:8000/search?user_id=Jeff&text=Weather&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:01:30,028 - WARNING - Search limit exceeded - user_id: Jeff
+2024-09-21 19:01:30,029 - INFO - GET http://localhost:8000/search?user_id=Jeff&text=Weather&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:01:38,430 - WARNING - Search limit exceeded - user_id: Chris
+2024-09-21 19:01:38,430 - INFO - GET http://localhost:8000/search?user_id=Chris&text=Weather&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:01:46,906 - INFO - Search request - user_id: Croll, text: Weather, top_k: 5, threshold: 0.75
+2024-09-21 19:01:47,593 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:01:47,743 - INFO - GET http://localhost:8000/search?user_id=Croll&text=Weather&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:01:58,976 - INFO - Search request - user_id: Croll, text: Food, top_k: 5, threshold: 0.75
+2024-09-21 19:01:59,049 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:01:59,186 - INFO - GET http://localhost:8000/search?user_id=Croll&text=Food&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:02:17,741 - INFO - Search request - user_id: Croll, text: Food, top_k: 5, threshold: 0.75
+2024-09-21 19:02:17,816 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:02:17,947 - INFO - GET http://localhost:8000/search?user_id=Croll&text=Food&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:11:15,234 - INFO - Search request - user_id: Croll, text: Food, top_k: 5, threshold: 0.75
+2024-09-21 19:11:15,901 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:11:16,035 - INFO - GET http://localhost:8000/search?user_id=Croll&text=Food&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:11:21,987 - INFO - Search request - user_id: Croll, text: Weather, top_k: 5, threshold: 0.75
+2024-09-21 19:11:22,082 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:11:22,227 - INFO - GET http://localhost:8000/search?user_id=Croll&text=Weather&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:15:41,712 - WARNING - Search limit exceeded - user_id: Croll
+2024-09-21 19:15:41,713 - INFO - GET http://localhost:8000/search?user_id=Croll&text=Weather&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:15:47,352 - INFO - Search request - user_id: 753, text: Weather, top_k: 5, threshold: 0.75
+2024-09-21 19:15:47,448 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:15:47,572 - INFO - GET http://localhost:8000/search?user_id=753&text=Weather&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:15:53,401 - INFO - Search request - user_id: 753, text: Food, top_k: 5, threshold: 0.75
+2024-09-21 19:15:53,523 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:15:53,638 - INFO - GET http://localhost:8000/search?user_id=753&text=Food&top_k=5&threshold=0.75 - Status: 200
+2024-09-21 19:16:47,109 - INFO - Search request - user_id: 654, text: food, top_k: 5, threshold: 0.8
+2024-09-21 19:16:47,201 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:16:47,348 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:16:54,826 - INFO - Search request - user_id: 654, text: weather, top_k: 5, threshold: 0.8
+2024-09-21 19:16:54,920 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:16:55,027 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:18:03,787 - INFO - Search request - user_id: 654, text: weather, top_k: 5, threshold: 0.8
+2024-09-21 19:18:03,912 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:18:04,067 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:23:58,822 - INFO - Search request - user_id: 654, text: weather, top_k: 5, threshold: 0.8
+2024-09-21 19:23:59,459 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:23:59,564 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:24:04,668 - INFO - Search request - user_id: 654, text: food, top_k: 5, threshold: 0.8
+2024-09-21 19:24:04,733 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:24:04,869 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:24:38,382 - WARNING - Search limit exceeded - user_id: 654
+2024-09-21 19:24:38,383 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:24:42,905 - INFO - Search request - user_id: 159, text: food, top_k: 5, threshold: 0.8
+2024-09-21 19:24:42,980 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:24:43,079 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:24:53,514 - INFO - Search request - user_id: 159, text: art, top_k: 5, threshold: 0.8
+2024-09-21 19:24:53,619 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:24:53,748 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:30:04,823 - INFO - Search request - user_id: 159, text: art, top_k: 5, threshold: 0.8
+2024-09-21 19:30:05,464 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:30:05,614 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:31:31,518 - INFO - Search request - user_id: 159, text: art, top_k: 5, threshold: 0.8
+2024-09-21 19:31:31,603 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:31:31,745 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:31:44,413 - INFO - Search request - user_id: 159, text: sport, top_k: 5, threshold: 0.8
+2024-09-21 19:31:44,501 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:31:44,664 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:40:07,584 - WARNING - Search limit exceeded - user_id: 159
+2024-09-21 19:40:07,585 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:40:12,023 - INFO - Search request - user_id: 1234, text: sport, top_k: 5, threshold: 0.8
+2024-09-21 19:40:12,150 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:40:12,309 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 19:40:19,589 - INFO - Search request - user_id: 1234, text: Art, top_k: 5, threshold: 0.8
+2024-09-21 19:40:19,695 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 19:40:19,809 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 21:51:30,982 - INFO - Search request - user_id: 1234, text: World, top_k: 5, threshold: 0.8
+2024-09-21 21:51:31,312 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 21:51:31,627 - ERROR - Error processing search request: PlanExecutor error during aggregation :: caused by :: knnVector field is indexed with 384 dimensions but queried with 1024, full error: {'ok': 0.0, 'errmsg': 'PlanExecutor error during aggregation :: caused by :: knnVector field is indexed with 384 dimensions but queried with 1024', 'code': 8, 'codeName': 'UnknownError', '$clusterTime': {'clusterTime': Timestamp(1726935691, 5), 'signature': {'hash': b'"\xfb,\x0f~\x04\xec\x86\xd4>\xa1\x94\x81\'S\xfa\x8e\xb1\xc4|', 'keyId': 7370982363263664136}}, 'operationTime': Timestamp(1726935691, 5)}
+2024-09-21 21:51:31,628 - INFO - POST http://localhost:8000/search - Status: 500
+2024-09-21 21:53:56,002 - INFO - Search request - user_id: 1234, text: World, top_k: 5, threshold: 0.8
+2024-09-21 21:53:56,249 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 21:53:56,462 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 21:54:12,816 - INFO - Search request - user_id: 1234, text: World, top_k: 5, threshold: 0.8
+2024-09-21 21:54:13,071 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 21:54:13,388 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 21:54:22,101 - WARNING - Search limit exceeded - user_id: 1234
+2024-09-21 21:54:22,101 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 21:54:29,375 - INFO - Search request - user_id: 3215, text: Art, top_k: 5, threshold: 0.8
+2024-09-21 21:54:29,710 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 21:54:29,942 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-21 21:55:20,038 - INFO - Search request - user_id: 3215, text: Art, top_k: 5, threshold: 0.8
+2024-09-21 21:55:20,359 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-21 21:55:20,502 - INFO - POST http://localhost:8000/search - Status: 200
+2024-09-22 16:32:55,669 - INFO - Search request - user_id: 753, text: Indian Stock market crash, top_k: 5, threshold: 0.75
+2024-09-22 16:32:56,328 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-22 16:32:56,513 - INFO - GET http://localhost:8000/search?user_id=753&text=Indian%20Stock%20market%20crash&top_k=5&threshold=0.75 - Status: 200
+2024-09-22 16:33:21,949 - INFO - Search request - user_id: 753, text: Bookmyshow, top_k: 5, threshold: 0.75
+2024-09-22 16:33:22,046 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-22 16:33:22,188 - INFO - GET http://localhost:8000/search?user_id=753&text=Bookmyshow&top_k=5&threshold=0.75 - Status: 200
+2024-09-22 16:33:56,230 - INFO - Search request - user_id: 753, text: Server problems, top_k: 5, threshold: 0.75
+2024-09-22 16:33:56,331 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-22 16:33:56,468 - INFO - GET http://localhost:8000/search?user_id=753&text=Server%20problems&top_k=5&threshold=0.75 - Status: 200
+2024-09-22 16:34:14,230 - INFO - Search request - user_id: 753, text: Cloud Server, top_k: 5, threshold: 0.75
+2024-09-22 16:34:14,325 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-22 16:34:14,469 - INFO - GET http://localhost:8000/search?user_id=753&text=Cloud%20Server&top_k=5&threshold=0.75 - Status: 200
+2024-09-22 16:34:34,389 - INFO - Search request - user_id: 753, text: Dark Web, top_k: 5, threshold: 0.75
+2024-09-22 16:34:34,468 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-22 16:34:34,591 - INFO - GET http://localhost:8000/search?user_id=753&text=Dark%20Web&top_k=5&threshold=0.75 - Status: 200
+2024-09-22 16:34:58,839 - WARNING - Search limit exceeded - user_id: 753
+2024-09-22 16:34:58,839 - INFO - GET http://localhost:8000/search?user_id=753&text=Dark%20Web&top_k=10&threshold=0.75 - Status: 200
+2024-09-22 16:35:03,909 - INFO - Search request - user_id: 877, text: Dark Web, top_k: 10, threshold: 0.75
+2024-09-22 16:35:04,022 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-22 16:35:04,221 - INFO - GET http://localhost:8000/search?user_id=877&text=Dark%20Web&top_k=10&threshold=0.75 - Status: 200
+2024-09-22 16:35:28,153 - INFO - Search request - user_id: 877, text: Stock market, top_k: 10, threshold: 0.75
+2024-09-22 16:35:28,232 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-22 16:35:28,475 - INFO - GET http://localhost:8000/search?user_id=877&text=Stock%20market&top_k=10&threshold=0.75 - Status: 200
