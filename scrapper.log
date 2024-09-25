@@ -33,3 +33,55 @@
 2024-09-25 09:47:30,011 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
 2024-09-25 09:47:30,070 - INFO - Embedding news data completed.
 2024-09-25 09:47:30,070 - INFO - Total news embedded: 30
+2024-09-25 19:03:09,942 - INFO - Scraping Hindustan Times...
+2024-09-25 19:03:12,395 - INFO - Scraping Hindustan Times completed.
+2024-09-25 19:03:12,395 - INFO - Embedding news data...
+2024-09-25 19:03:15,651 - ERROR - Failed to generate embedding for Alia Bhatt shares new pics with Heidi Klum from PFW; returns to India with Raha: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:17,892 - ERROR - Failed to generate embedding for Amazon Great Indian Festival Sale: Get mega discounts on ACs, chimneys, fridges: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:20,038 - ERROR - Failed to generate embedding for Delhi University campuses abuzz with election campaigns: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:22,541 - ERROR - Failed to generate embedding for 150 seconds a day for a fit bod? We asked experts to weigh in on the latest fad: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:24,693 - ERROR - Failed to generate embedding for Zoya Akhtar recalls when producer's uncle called ZNMD ‘rubbish movie’: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:26,695 - ERROR - Failed to generate embedding for Let Coldplay be your reason to visit Abu Dhabi this January: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:28,700 - ERROR - Failed to generate embedding for Bengaluru's Silk Board junction sees 50% drop in traffic congestion: Here's why: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:30,709 - ERROR - Failed to generate embedding for Evening briefing: Rahul Gandhi slams BJP over J&K's UT status; & more: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:32,715 - ERROR - Failed to generate embedding for Los Angeles bus hijacking sparks wild police chase, leaves one person dead: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:34,721 - ERROR - Failed to generate embedding for Indian man’s layover at Abu Dhabi airport turns into 'luxury mall' trip. Watch: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:36,724 - ERROR - Failed to generate embedding for Poori duniya dekhegi hum kitna badhiya kaam karte hain: Durgesh on Laapataa…: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:38,731 - ERROR - Failed to generate embedding for Skip the cuppa and try these coffee-based sweets!: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:40,735 - ERROR - Failed to generate embedding for General Knowledge Quiz: Polish your skills to score well in competitive exams: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:42,739 - ERROR - Failed to generate embedding for Tarot Card Readings: Tarot daily prediction for September 25, 2024: [WinError 10061] No connection could be made because the target machine actively refused it
+2024-09-25 19:03:54,793 - INFO - Scraping Hindustan Times...
+2024-09-25 19:03:57,174 - INFO - Scraping Hindustan Times completed.
+2024-09-25 19:04:00,212 - INFO - Embedding news data...
+2024-09-25 19:04:03,114 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,214 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,288 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,379 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,462 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,538 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,615 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,722 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,812 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,894 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:03,979 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,087 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,178 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,256 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,327 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,425 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,538 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,622 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,735 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,806 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,888 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:04,967 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,050 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,138 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,224 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,329 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,406 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,490 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,574 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,655 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-09-25 19:04:05,713 - INFO - Embedding news data completed.
+2024-09-25 19:04:05,713 - INFO - Total news embedded: 30
