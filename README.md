@@ -1,4 +1,4 @@
-# AI Intern Task for Trademarkia
+# Retrival Augmented Generation on Hindustan Headlines with Atlas
 The task is to build a backend for efficient document retrieval. This project is coded in `Python`. In the backend, I have included all the required endpoints. The project is fully complete with a working database and embedding model.
 
 ## Features
