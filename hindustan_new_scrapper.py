@@ -124,13 +124,13 @@ def getNewsData():
         "User-Agent":
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36"
     }
+    print('Scraping Hindustan Times...')
     response = requests.get(
         f"https://www.hindustantimes.com/latest-news", headers=headers
     )
     soup = BeautifulSoup(response.content, "html.parser")
     news_results = []
 
-    print('Scraping Hindustan Times...')
     logging.info('Scraping Hindustan Times...')
     for el in soup.select("div.cartHolder"):
         news_item = {
